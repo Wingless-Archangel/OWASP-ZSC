@@ -150,6 +150,7 @@ commands = {  #commands section
     'version': ['software version', ''],
     'exit': ['to exit the software', ''],
     'quit': ['to exit the software', ''],
+    '#': ['insert comment', ''],
     #add main command here
 }
 
@@ -168,11 +169,12 @@ help = [
     ['restart', commands['restart'][0]],
     ['version', commands['version'][0]],
     ['exit/quit', commands['exit'][0]],
+    ['#', commands['#'][0]],
 ]
 
 help_cli = [
 	[['-l','--show-payloads'],'show list of available payloads and required inputs'],
-	[['-s','--shel-storm'],'download, search, list shellcode from shell-storm'],
+	[['-s','--shell-storm'],'download, search, list shellcode from shell-storm'],
 	[['-p','--payload'],'select a payload'],
 	[['-i','--input'],'enter the required inputs'],
 	[['-c','--assembly-code'],'show assembly code instead of shellcode'],
